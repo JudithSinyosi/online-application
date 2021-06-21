@@ -1,9 +1,12 @@
 <div class="row">
   <div class="col-6">
-    <h3>Quiz Application</h3>
+    <h4>ANDZY AGENCY ONLINE APPLICATION</h4>
+    <br>
+    <h6> Our online test matter 2 Learn great things from us ,
+       thru Your online writting partner 4 Great skills to learn</h6>
   </div>
   <div class="col-6 text-right">
-    Select Quiz:
+    Select TEST:
     <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
       <option *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
     </select>
@@ -58,7 +61,7 @@
         <div class="p-1 m-2 alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</div>
       </div>
     </div>
-    <h4 class="alert alert-info text-center">You may close this window now.</h4>
+    <h4 class="alert alert-info text-center">You may go back now.</h4>
   </div>
   <hr />
   <div *ngIf="mode!='result'">
